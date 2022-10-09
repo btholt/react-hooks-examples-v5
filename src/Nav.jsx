@@ -19,7 +19,6 @@ export default function () {
         <option value="/useCallback">useCallback</option>
         <option value="/useLayoutEffect">useLayoutEffect</option>
         <option value="/useId">useId</option>
-        <option value="/others">Others</option>
       </select>
     </nav>
   );

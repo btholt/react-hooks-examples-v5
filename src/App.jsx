@@ -7,7 +7,6 @@ import UseMemo from './routes/UseMemo';
 import UseReducer from './routes/UseReducer';
 import UseLayoutEffect from './routes/UseLayoutEffect';
 import UseId from './routes/UseId';
-import Others from './routes/Others';
 
 function App() {
   return (
@@ -22,7 +21,6 @@ function App() {
         <Route path="/useRef" element={<UseRef />} />
         <Route path="/useLayoutEffect" element={<UseLayoutEffect />} />
         <Route path="/useId" element={<UseId />} />
-        <Route path="/others" element={<Others />} />
       </Routes>
     </div>
   );
