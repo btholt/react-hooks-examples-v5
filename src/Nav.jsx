@@ -13,7 +13,7 @@ export default function () {
         }}
       >
         <option value="/">Home</option>
-        <option value="/useRef">useState</option>
+        <option value="/useRef">useRef</option>
         <option value="/useReducer">useReducer</option>
         <option value="/useMemo">useMemo</option>
         <option value="/useCallback">useCallback</option>
