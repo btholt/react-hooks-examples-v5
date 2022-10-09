@@ -1,3 +1,3 @@
-# react-hooks-examples-v5-2
+# react-hooks-examples-v5
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/ir5-zjoupw)
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/ir5)
