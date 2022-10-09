@@ -1,3 +1,29 @@
+import { Link } from 'react-router-dom';
+
 export default function Home() {
-  return <h1>Home</h1>;
+  return (
+    <div className="home-links">
+      <Link className="home-link" to="/useRef">
+        useRef
+      </Link>
+      <Link className="home-link" to="/useReducer">
+        useReducer
+      </Link>
+      <Link className="home-link" to="/useMemo">
+        useMemo
+      </Link>
+      <Link className="home-link" to="/useCallback">
+        useCallback
+      </Link>
+      <Link className="home-link" to="/useLayoutEffect">
+        useLayoutEffect
+      </Link>
+      <Link className="home-link" to="/useId">
+        useId
+      </Link>
+      <Link className="home-link" to="/others">
+        Others
+      </Link>
+    </div>
+  );
 }
