@@ -107,9 +107,16 @@ nav select {
   }
 }
 
+@media screen and (max-width: 700px) {
+  .btn-groups {
+    flex-direction: column;
+  }
+}
+
 .readable-banner {
   padding: 50px;
   text-align: center;
+  font-size: 20px;
 }
 
 .btn-groups {

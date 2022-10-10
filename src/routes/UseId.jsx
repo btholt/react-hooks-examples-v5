@@ -1,16 +1,25 @@
 import { useId } from 'react';
 
-export default function Home() {
+function LabelInputPair() {
   const id = useId();
-
   return (
-    <div>
-      <h1>id: {id}</h1>
+    <div style={{ marginBottom: '50px' }}>
       <label htmlFor={id}>
-        Click on this label and it'll highlight the input
+        Click on this label and it'll highlight the input {id}
       </label>
       <br />
-      <input type="text" id={id} />
+      <input type="text" id={id} placeholder={`input id ${id}`} />
     </div>
+  );
+}
+
+export default function UseIdComponent() {
+  return (
+    <>
+      <LabelInputPair />
+      <LabelInputPair />
+      <LabelInputPair />
+      <LabelInputPair />
+    </>
   );
 }
