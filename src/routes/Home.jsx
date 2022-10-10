@@ -21,9 +21,6 @@ export default function Home() {
       <Link className="home-link" to="/useId">
         useId
       </Link>
-      <Link className="home-link" to="/others">
-        Others
-      </Link>
     </div>
   );
 }

@@ -14,7 +14,6 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/useRef" element={<UseRef />} />
         <Route path="/useReducer" element={<UseReducer />} />
         <Route path="/useMemo" element={<UseMemo />} />
         <Route path="/useCallback" element={<UseCallback />} />

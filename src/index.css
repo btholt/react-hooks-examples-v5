@@ -28,6 +28,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  padding: 10px;
 }
 
 h1 {
@@ -83,9 +84,10 @@ nav select {
 }
 
 .home-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-link {
@@ -96,7 +98,13 @@ nav select {
   height: 120px;
   border: 1px solid #333;
   border-radius: 8px;
-  margin-bottom: 25px;
+  margin: 0 auto 25px auto;
+}
+
+@media screen and (max-width: 450px) {
+  .home-links {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .readable-banner {
@@ -106,9 +114,8 @@ nav select {
 
 .btn-groups {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .btn-label {
