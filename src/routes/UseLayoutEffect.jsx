@@ -12,7 +12,6 @@ const LayoutEffectComponent = () => {
 
   return (
     <div>
-      <h1>useLayoutEffect Example</h1>
       <h2>textarea width: {width}px</h2>
       <h2>textarea height: {height}px</h2>
       <textarea
