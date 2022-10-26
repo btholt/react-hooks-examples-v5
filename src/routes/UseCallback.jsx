@@ -2,18 +2,23 @@ import { useEffect, useState, useMemo, useCallback } from 'react';
 import UseRefComponent from './UseRef';
 
 export default function Home() {
-  const [time, setTime] = useState(new Date().toLocaleTimeString());
+  const [left, setLeft] = useState(0);
+  useEffect(() => {
+    requestAnimationFrame(animate);
+    function animate() {
+      setLeft(left + 1);
+    }
+  }, [left]);
 
   const aUsefulCallback = () => {};
   const memoizedCallback = useCallback(aUsefulCallback, []);
 
-  useEffect(() => {
-    setTimeout(() => setTime(new Date().toLocaleTimeString()), 1000);
-  });
-
   return (
     <div>
-      <h1>Current Time: {time}</h1>
+      <div
+        style={{ left: `${Math.sin(left * 0.05) * 100 + 100}px` }}
+        className="ball"
+      ></div>
       <UseRefComponent cb={memoizedCallback} />
     </div>
   );
