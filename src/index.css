@@ -133,3 +133,11 @@ nav select {
 .btn-group button {
   border: 1px solid #ccc;
 }
+
+.ball {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  background-color: red;
+  border-radius: 100%;
+}
